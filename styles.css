@@ -121,4 +121,5 @@ footer {
 
 #copyright {
     color: var(--primary-color);
+    margin-right: 20px;
 }
