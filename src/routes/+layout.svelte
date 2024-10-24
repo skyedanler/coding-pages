@@ -25,20 +25,7 @@
   const currentYear = new Date().getFullYear();
 </script>
 
-<svelte:head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Eater&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-</svelte:head>
-
-<body class={season}>
+<div id="body" class={season}>
   <header>
     <div class="title-section">
       <img id="header-img1" src={headerImg} alt="Header Img 1" />
@@ -62,11 +49,11 @@
   <footer>
     <p id="copyright">Skye Danler {currentYear} &copy;</p>
   </footer>
-</body>
+</div>
 
 <style>
   /*Themes*/
-  body.halloween {
+  .halloween {
     --primary-color: black;
     --secondary-color: orange;
     --header-color: black;
@@ -75,7 +62,7 @@
     font-family: "Eater", serif;
   }
 
-  body.christmas {
+  .christmas {
     --primary-color: green;
     --secondary-color: white;
     --header-color: red;
@@ -84,7 +71,7 @@
     font-family: "Mountains of Christmas", serif;
   }
 
-  body {
+  #body {
     background-color: var(--primary-color);
     margin: 0;
     padding: 0;
