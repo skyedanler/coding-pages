@@ -36,8 +36,7 @@
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/">Codecademy</a></li>
-        <li><a href="/">NavSite</a></li>
-        <li><a href="/">NavSite</a></li>
+        <li><a href="/">Blog</a></li>
       </ul>
     </nav>
   </header>
@@ -57,18 +56,18 @@
     --primary-color: black;
     --secondary-color: orange;
     --header-color: black;
-    --font-color: yellow;
+    --font-color: rgb(177, 46, 177);
     --nav-font-color: orange;
-    font-family: "Eater", serif;
+    --header-font: "Eater", serif;
   }
 
   .christmas {
-    --primary-color: green;
+    --primary-color: rgb(28, 209, 28);
     --secondary-color: white;
     --header-color: red;
     --font-color: white;
     --nav-font-color: white;
-    font-family: "Mountains of Christmas", serif;
+    --header-font: "Mountains of Christmas", serif;
   }
 
   #body {
@@ -76,6 +75,7 @@
     margin: 0;
     padding: 0;
     color: var(--font-color);
+    min-height: 100vh;
   }
 
   .title-section {
@@ -84,9 +84,20 @@
     justify-content: center;
   }
 
+  header, footer {
+    background-color: var(--secondary-color);
+    font-family: var(--header-font);
+  }
+
+  .rest-of-body {
+    margin: 40px;
+    /*font-family: "Times New Roman", serif;*/
+    font-family: var(--header-font);
+    line-height: 2;
+  }
+
   /*Header*/
   header {
-    background-color: var(--secondary-color);
     display: grid;
     grid-template-areas: "header" "nav";
   }
@@ -148,7 +159,6 @@
   }
 
   footer {
-    background-color: var(--secondary-color);
     display: flex;
     justify-content: right;
     position: absolute;
