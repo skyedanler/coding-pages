@@ -1,8 +1,9 @@
 <h2>Welcome to my page!</h2>
-<p>Code surrounds us. It's in the technology we use, the websites we browse. Since I really started to
-    get serious about my journey in the world of programming, I've noticed the code in everything. Not only
-    do I use the 'Inspect' feature on my browser way more often to see how other developers make their sites work
-    and what could benefit me, but I've also thought about what the code would be for certain things.  
+<p>Code surrounds us. It's in the technology we use and of course, all the websites we browse. Since I began
+    my journey in the world of programming, my brain has certainly rewired itself to think about how things are influenced
+    by code or could be written as such, from the video games I play to the patterns I knit as ridiculous that sounds. 
+    The 'Inspect' feature on my browser has become a reliable companion in seeing how other developers think 
+    and what could benefit me. 
 </p>
 <p>My name is Skye Danler and I'm a mathematics graduate from the University of Southern Maine. 
     I have various passions not limited to knitting/crocheting, reading, writing, cooking, baking, 

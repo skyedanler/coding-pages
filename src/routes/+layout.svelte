@@ -16,6 +16,9 @@
     } else if (currentMonth === 9) {
       setSeason("halloween");
       headerImg = "/images/spooky_ghost.png";
+    } else if (currentMonth == 10) {
+      setSeason('thanksgiving');
+      headerImg = '/images/thanksgiving.png'
     } else {
       setSeason("");
       headerImg = "";
@@ -60,17 +63,24 @@
     --secondary-color: orange;
     --header-color: black;
     --font-color: rgb(177, 46, 177);
-    --nav-font-color: orange;
     --header-font: "Eater", serif;
   }
 
+  .thanksgiving {
+    --primary-color: rgb(92, 76, 76);
+    --secondary-color: rgba(248, 245, 41, 0.911);
+    --header-color: rgb(92, 76, 76);
+    --font-color: rgb(216, 154, 38);
+    --header-font: "Playwrite GB S", serif;
+  }
+
   .christmas {
-    --primary-color: rgb(28, 209, 28);
-    --secondary-color: white;
-    --header-color: red;
+    --primary-color: rgb(10, 173, 10);
+    --secondary-color: rgb(172, 26, 26);
+    --header-color: white;
     --font-color: white;
-    --nav-font-color: white;
     --header-font: "Mountains of Christmas", serif;
+    font-size: 1.25em;
   }
 
   #body {
@@ -121,6 +131,11 @@
     margin: 0 20px;
   }
 
+  #header-img2 {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
   nav {
     grid-area: nav;
     display: flex;
@@ -151,16 +166,16 @@
 
   nav li:active {
     font-weight: 700;
-    color: var(--nav-font-color);
+    color: var(--secondary-color);
   }
 
   nav a {
     text-decoration: none;
-    color: var(--nav-font-color);
+    color: var(--secondary-color);
   }
 
   nav a:visited {
-    color: var(--nav-font-color);
+    color: var(--secondary-color);
   }
 
   /*adjust footer*/
@@ -172,7 +187,7 @@
   #content-wrap {
     padding-bottom: 4rem;
   }
-  
+
   footer {
     position: absolute;
     display: flex;
@@ -183,7 +198,7 @@
   }
 
   #copyright {
-    color: var(--primary-color);
+    color: var(--header-color);
     margin-right: 20px;
   }
 </style>
