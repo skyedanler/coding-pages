@@ -26,28 +26,31 @@
 </script>
 
 <div id="body" class={season}>
-  <header>
-    <div class="title-section">
-      <img id="header-img1" src={headerImg} alt="Header Img 1" />
-      <h1>Coding Is Fun!</h1>
-      <img id="header-img2" src={headerImg} alt="Header Img 2" />
+  <div id="page-container">
+    <div id="content-wrap">
+      <header>
+        <div class="title-section">
+          <img id="header-img1" src={headerImg} alt="Header Img 1" />
+          <h1>Coding Is Fun!</h1>
+          <img id="header-img2" src={headerImg} alt="Header Img 2" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/codecademy">Codecademy</a></li>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="rest-of-body">
+        <slot></slot>
+      </main>
     </div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/codecademy">Codecademy</a></li>
-        <li><a href="/blog">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="rest-of-body">
-    <slot></slot>
-  </main>
-
-  <footer>
-    <p id="copyright">Skye Danler {currentYear} &copy;</p>
-  </footer>
+    <footer>
+      <p id="copyright">Skye Danler {currentYear} &copy;</p>
+    </footer>
+  </div>
 </div>
 
 <style>
@@ -161,12 +164,22 @@
   }
 
   /*adjust footer*/
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  #content-wrap {
+    padding-bottom: 4rem;
+  }
+  
   footer {
+    position: absolute;
     display: flex;
     justify-content: right;
-    position: relative;
     bottom: 0;
     width: 100%;
+    height: 4rem;
   }
 
   #copyright {
