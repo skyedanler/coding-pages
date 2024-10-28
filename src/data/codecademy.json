@@ -1,0 +1,7 @@
+{
+    "Learn JavaScript": ["Mainly a refresher for my code knowledge from college", "Iteration", "Loops", "Objects", "Functions", "Conditionals"],
+    "Learn HTML": ["Structure of a Site", "Tables", "Forms"],
+    "Build a Website with HTML, CSS, and GitHub Pages": ["Gave me a foundation to create the base of a website", "Learned CSS"],
+    "Building Interactive JavaScript Websites": ["Creating JS that connects with my HTML to access elements"],
+    "Learn Python 3": ["Learning how to code in a different way from JS", "Dictionaries", "Being able to read JSON, CSV, and text files"]
+}

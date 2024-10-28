@@ -35,8 +35,8 @@
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/">Codecademy</a></li>
-        <li><a href="/">Blog</a></li>
+        <li><a href="/codecademy">Codecademy</a></li>
+        <li><a href="/blog">Blog</a></li>
       </ul>
     </nav>
   </header>
@@ -76,6 +76,7 @@
     padding: 0;
     color: var(--font-color);
     min-height: 100vh;
+    margin-bottom: 50px;
   }
 
   .title-section {
@@ -84,7 +85,8 @@
     justify-content: center;
   }
 
-  header, footer {
+  header,
+  footer {
     background-color: var(--secondary-color);
     font-family: var(--header-font);
   }
@@ -158,10 +160,11 @@
     color: var(--nav-font-color);
   }
 
+  /*adjust footer*/
   footer {
     display: flex;
     justify-content: right;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
   }
