@@ -1,3 +1,8 @@
+# Coding Pages
+I am building this project to practice with Svelte while I learn it. It is also a platform for me to showcase my skills and reveal what I've been learning. Below is the embedded tutorial on how to set up and use Svelte for projects like this one. 
+
+---
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
