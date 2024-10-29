@@ -17,8 +17,8 @@
       setSeason("halloween");
       headerImg = "/images/spooky_ghost.png";
     } else if (currentMonth == 10) {
-      setSeason('thanksgiving');
-      headerImg = '/images/thanksgiving.png'
+      setSeason("thanksgiving");
+      headerImg = "/images/thanksgiving.png";
     } else {
       setSeason("");
       headerImg = "";
